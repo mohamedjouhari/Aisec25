@@ -108,10 +108,60 @@ ol li
   width: 960px;
   margin: 20px auto;}
 
-#header
-{ width: 945px;
-  height: 280px;}
 
+
+  
+
+#header {
+  width: 945px;
+  height: 280px;
+  position: relative;
+}
+/*
+#logos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  position: absolute;
+  right: 0px; 
+  top: 10px;
+}
+
+#logos a img {
+  width: 150px; 
+  margin: 10px;
+}
+  
+/*
+  #header {
+    width: 945px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 0px;
+    
+  }
+  
+  #logos {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+  }
+  
+  #logos a img {
+    width: 150px; 
+    margin: 10px;
+    max-width: 100%;
+  }
+  
+  #content {
+    flex: 1; 
+    min-width: 50%; 
+  }
+  */
+  
 #logo
 { width: 950px;
   float: left;
