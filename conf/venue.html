@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="International Conference on Artificial Intelligence &amp; Cybersecurity">
+    <meta name="keywords" content="Artificial Intelligence" "Cybersecurity" "Conference">
+    <link rel="shortcut icon" href="assets/img/aisec_removedbg_2.png" type="image/png">
+
+    <title>AISEC 2025</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/index.css" media="screen">
+    <link rel="stylesheet" href="assets/css/nicepage.css" media="screen">
+    <script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="assets/js/nicepage.js" defer=""></script>
+
+  </head>
+  <body>
+
+    <style>
+      .navbar-nav .nav-link {
+        color: white !important;
+      }
+
+      .navbar.scrolled {
+        background-color: #fff !important;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+    </style>
+
+    
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <script>
+            function updateNavbar() {
+                let navbar = document.querySelector(".navbar");
+                let logoDefault = document.getElementById("logo-default");
+                let logoScrolled = document.getElementById("logo-scrolled");
+          
+                if (window.innerWidth <= 768) { 
+                    // Mobile: Show scrolled logo from the start
+                    logoDefault.classList.add("hidden");
+                    logoScrolled.classList.remove("hidden");
+                } else {
+                    // Desktop: Handle logo change on scroll
+                    if (window.scrollY > 50) {
+                        navbar.classList.add("scrolled");
+                        logoDefault.classList.add("hidden");
+                        logoScrolled.classList.remove("hidden");
+                    } else {
+                        navbar.classList.remove("scrolled");
+                        logoDefault.classList.remove("hidden");
+                        logoScrolled.classList.add("hidden");
+                    }
+                }
+            }
+          
+            window.addEventListener("scroll", updateNavbar);
+            window.addEventListener("resize", updateNavbar);
+            document.addEventListener("DOMContentLoaded", updateNavbar);
+          </script>
+          <a href="../index.html" class="navbar-brand">
+            <img src="assets/img/aisec_removedbg_2.png" id="logo-default" class="logo">
+            <img src="assets/img/LOGOS (3).png" id="logo-scrolled" class="logo hidden">
+          </a>
+             
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="authors.html">
+                  CFP
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="committes.html">
+                  Committes 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="speakers.html">
+                  Speakers
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registration.html">
+                  Registration
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tracks.html">
+                  Special Track
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">
+                  Schedule
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="venue.html">
+                  Venue
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+
+      <style>
+        .hero-area-bg-1 {
+            background: url(assets/img/Marrakech-tour-atlas-mountain-1.jpg) no-repeat;
+            background-size: cover;
+            }
+        .u-sheet {
+            max-width: 1100px; /* Adjust width as needed */
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px; /* Prevents content from touching edges */
+            padding-right: 20px;
+        }
+        .hero-area-bg-1 {
+            margin-top: 0 !important;
+        }
+        #hero-area {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        .navbar .nav-link {
+    color: white; /* Default color */
+}
+
+/* Change nav-link color to black on mobile */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        color: black !important;
+    }
+
+    /* Ensure the scrolled logo is shown on mobile */
+    #logo-default {
+        display: none;
+    }
+
+    #logo-scrolled {
+        display: block;
+    }
+}
+
+      </style>
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg-1">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-sm-12">
+              <div class="contents text-center">
+                <h2 class="head-title">Visit Marrakech – The Magical City</h2>
+                <p class="banner-info">Why Visit Marrakech?</p>
+                <p class="banner-desc">
+                    Marrakech is a city of wonder, rich in history and culture, offering an unforgettable experience for travelers. As one of Morocco’s imperial cities, it boasts stunning architecture, vibrant markets, and a unique blend of modern and traditional influences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+    <br><br>
+    
+
+    <section class="u-align-center u-clearfix u-container-align-center u-grey-10 u-section-1" id="sec-eac6">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <h2 class="u-align-center u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500"> Must-Visit Attractions</h2>
+          <div class="u-expanded-width u-list u-list-1">
+            <div class="u-repeater u-repeater-1">
+              <div class="u-container-style u-image u-image-round u-list-item u-radius-25 u-repeater-item u-shading u-image-1" data-image-width="1080" data-image-height="1080" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                <div class="u-container-layout u-similar-container u-container-layout-1">
+                  <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+                  <h3 class="u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"> Djemaa el-Fna</h3>
+                  <p class="u-text u-text-default u-text-3"> The heart of Marrakech, a bustling square filled with street performers, food stalls, and local artisans.</p>
+                </div>
+              </div>
+              <div class="u-container-style u-image u-image-round u-list-item u-radius-25 u-repeater-item u-shading u-image-2" data-image-width="800" data-image-height="1200" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                <div class="u-container-layout u-similar-container u-container-layout-2">
+                  <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+                  <h3 class="u-text u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"> The Souks</h3>
+                  <p class="u-text u-text-default u-text-5"> A labyrinth of colorful markets offering spices, textiles, handmade crafts, and traditional Moroccan goods.</p>
+                </div>
+              </div>
+              <div class="u-container-style u-image u-image-round u-list-item u-radius-25 u-repeater-item u-shading u-image-3" data-image-width="1080" data-image-height="1080" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                <div class="u-container-layout u-similar-container u-container-layout-3">
+                  <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+                  <h3 class="u-text u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"> Bahia &amp; El Badi Palaces</h3>
+                  <p class="u-text u-text-default u-text-7"> Marvel at the architectural grandeur and historical significance of these palaces.</p>
+                </div>
+              </div>
+              <div class="u-container-style u-image u-image-round u-list-item u-radius-25 u-repeater-item u-shading u-image-4" data-image-width="2304" data-image-height="3072" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">
+                <div class="u-container-layout u-similar-container u-container-layout-4">
+                  <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+                  <h3 class="u-text u-text-8" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"> Koutoubia Mosque</h3>
+                  <p class="u-text u-text-default u-text-9"> Iconic religious sites with beautiful Moroccan design.</p>
+                </div>
+              </div>
+              <div class="u-container-style u-image u-image-round u-list-item u-radius-25 u-repeater-item u-shading u-image-5" data-image-width="972" data-image-height="972" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">
+                <div class="u-container-layout u-similar-container u-container-layout-5">
+                  <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-5" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+                  <h3 class="u-text u-text-10" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"> Majorelle Garden</h3>
+                  <p class="u-text u-text-default u-text-11"> Relax in the stunning botanical gardens once owned by Yves Saint Laurent.</p>
+                </div>
+              </div>
+              <div class="u-container-style u-image u-image-round u-list-item u-radius-25 u-repeater-item u-shading u-image-6" data-image-width="1080" data-image-height="1080" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">
+                <div class="u-container-layout u-similar-container u-container-layout-6">
+                  <div class="u-border-3 u-border-white u-line u-line-horizontal u-opacity u-opacity-45 u-line-6" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+                  <h3 class="u-text u-text-12" data-animation-name="customAnimationIn" data-animation-duration="1750" data-animation-delay="500"> Saadian Tombs</h3>
+                  <p class="u-text u-text-default u-text-13"> A historical site showcasing intricate Moroccan craftsmanship.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="u-align-center u-clearfix u-container-align-center u-grey-10 u-section-2" src="" id="sec-86e2">
+        <div class="u-expanded-width u-grey-10 u-shape u-shape-rectangle u-shape-1"></div>
+        <h2 class="u-text u-text-body-color u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500"> Things to Do in Marrakech</h2>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-radius-50 u-repeater-item u-shape-round u-white u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-round u-radius-30 u-image-1" src="assets/img/blog/lkotchi.jpg" data-image-width="808" data-image-height="640">
+                <p class="u-align-center u-text u-text-grey-50 u-text-2"> Take a traditional horse-drawn carriage ride through the city.</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-align-center u-container-style u-list-item u-radius-50 u-repeater-item u-shape-round u-video-cover u-white u-list-item-2" data-animation-direction="Up" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+                <img alt="" class="u-expanded-width u-image u-image-round u-radius-30 u-image-2" src="assets/img/blog/film.jpg" data-image-width="1920" data-image-height="1920">
+                <p class="u-align-center u-text u-text-grey-50 u-text-3"> Visit the Marrakech International Film Festival, GITEX Africa, or other major events.</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-radius-50 u-repeater-item u-shape-round u-video-cover u-white u-list-item-3" data-animation-direction="Up" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-round u-radius-30 u-image-3" src="assets/img/blog/chezAli.jpg" data-image-width="669" data-image-height="446">
+                <p class="u-align-center u-text u-text-grey-50 u-text-4"> Experience a traditional Chez Ali Fantasia dinner with live performances.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="u-clearfix u-container-align-center u-grey-10 u-section-3" id="block-1">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <h2 class="u-text u-text-1"> Accommodation Options</h2>
+          <p class="u-text u-text-2"> Whether you're looking for luxury or budget-friendly stays, Marrakech offers a wide range of hotels and traditional Riads:</p>
+          <div class="u-expanded-width u-list u-list-1">
+            <div class="u-repeater u-repeater-1">
+              <div class="u-container-align-left u-container-style u-list-item u-repeater-item">
+                <div class="u-container-layout u-similar-container u-container-layout-1">
+                  <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="270" data-image-height="187" src="assets/img/blog/Four Seasons.jpg">
+                  <h4 class="u-align-left u-text u-text-default u-text-3"> Luxury Hotels</h4>
+                  <p class="u-align-left u-text u-text-4"> Four Seasons, Sofitel, Hilton, Palmeraie Golf Palace &amp; Resort.</p>
+                </div>
+              </div>
+              <div class="u-container-align-left u-container-style u-list-item u-repeater-item">
+                <div class="u-container-layout u-similar-container u-container-layout-2">
+                  <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="1024" data-image-height="683" src="assets/img/blog/Riad Kniza.jpg">
+                  <h4 class="u-align-left u-text u-text-default u-text-5"> Traditional Riads</h4>
+                  <p class="u-align-left u-text u-text-6"> Riad Kniza, La Maison Arabe, Riad Yasmine.</p>
+                </div>
+              </div>
+              <div class="u-container-align-left u-container-style u-list-item u-repeater-item">
+                <div class="u-container-layout u-similar-container u-container-layout-3">
+                  <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="425" data-image-height="280" src="assets/img/blog/Kenzi Semiramis.jpg">
+                  <h4 class="u-align-left u-text u-text-default u-text-7"> Budget-Friendly Options</h4>
+                  <p class="u-align-left u-text u-text-8"> Kenzi Semiramis, Hotel Nassim, Es Saadi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12 col-xs-12">
+              <div class="site-info">
+                <p>All Rights Reserved &copy; by 2025 AISEC International Summit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+    <!--
+    <div id="preloader">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+    -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/main.js"></script>  
+
+
+  </body>
+</html>

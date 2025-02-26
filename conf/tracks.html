@@ -1,183 +1,314 @@
 <!DOCTYPE html>
-<!-- saved from url=(0042)index.html -->
-<html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="International Conference on Artificial Intelligence &amp; Cybersecurity">
+    <meta name="keywords" content="Artificial Intelligence" "Cybersecurity" "Conference">
+    <link rel="shortcut icon" href="assets/img/aisec_removedbg_2.png" type="image/png">
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Special tracks AISEC 2025</title>
-	<meta name="description" content="Tracks AISEC-2025">
-	<meta name="keywords" content="Artificial Intelligence" "Cybersecurity" "Conference">
-	<link rel="shortcut icon" href="images/aisec removedbg.png" type="image/png">
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1"
-	/>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap"
-	 rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-</head>
+    <title>AISEC 2025</title>
 
-<body>
-	<div id="main">
-	<div id="header" style="margin-left:15px;">
-    <a href="../index.html">
-        <IMG src="images/jogo.png" style= "width:20%;margin:10px" ALIGN= "right" />
-    </a>
-    <h1><strong>International Conference on Artificial Intelligence &amp; Cybersecurity</h1>
-    <h3 style="color:red;">From 12 to 14 May 2025</strong></h3>
-    <h3> <a HREF="https://ensa-marrakech.uca.ma/en/" target="_blank"> National School of Applied Sciences</a> - <a href="https://www.uca.ma/fr" target="_blank">Cadi Ayyad University</a>, Marrakech, Morocco</h3>
-    <h4> 
-        in collaboration with <a href="" target="_blank">Research Laboratory in Sustainable and Intelligent Technologies (LaRTID)</a> Marrakech, Morocco
-		and <a href="https://www.ai-research-lab.org/" target="_blank">2AI: Applied AI Research Lab</a> USA
-    </h4>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  </head>
+  <body>
+
+    <style>
+      .navbar {
+        background-color: #e4e6e8 !important;
+      }
+      .navbar-nav .nav-link {
+        color: black !important;
+    }
+    .container {
+        max-width: 1100px; /* Adjust to control content width */
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;/*Ad padding to prevent content from touching the edges */
+        padding-right: 20px;
+    }
+    /* Remove padding on smaller screens */
+@media (max-width: 768px) { /* Adjust breakpoint if needed */
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+    </style>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display
+          <script>
+            window.addEventListener("scroll", function () {
+                let navbar = document.querySelector(".navbar");
+                let logoDefault = document.getElementById("logo-default");
+                let logoScrolled = document.getElementById("logo-scrolled");
+
+                if (window.scrollY > 50) {
+                    logoDefault.classList.add("hidden");
+                    logoScrolled.classList.remove("hidden");
+                } else {
+                    logoDefault.classList.remove("hidden");
+                    logoScrolled.classList.add("hidden");
+                }
+            });
+          </script>
+        -->
+          <a href="../index.html" class="navbar-brand">
+            <img src="assets/img/LOGOS_(2)[3].png" id="logo-default" class="logo">
+          </a>
+             
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="authors.html">
+                  CFP
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="committes.html">
+                  Committes 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="speakers.html">
+                  Speakers
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registration.html">
+                  Registration
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="tracks.html">
+                  Special Track
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">
+                  Schedule
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="venue.html">
+                  Venue
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
     <br><br>
-</div>
-    <br><br>
-	<div id="menubar">
-		<ul id="menu">
-			<li><a class="current" href="index.html">Home</a></li>
-			<li><a href="committees.html">Committee</a></li>
-			<li><a href="authors.html">CFP</a></li>
-			<li><a href="registration.html">Registration</a></li>
-			<li><a href="Schedule.html" >Schedule</a></li>
-			<li><a href="tracks.html">Special track</a></li>
-			<li><a  href="workshop.html">Workshop</a></li>
-		</ul>
-	</div>
-	</div>
-
-	<div id="site_content">
-            <div style="margin:25px;" id="">
-			<!-- <div id="content"> insert the page content here -->
-			<!--<h1>RTIP2R 2022 Committees</h1>-->
-             <h1>Special tracks (conference submission) </h1>
-           
-			
-            
-            
- 
-           
-  <h2>Call For Special Tracks</h2>
-<ul  style="text-align:justify;"> <li> Proposed special tracks should not duplicate the general conference topics and should concentrate on emerging research fields within image processing and pattern recognition. 
-</li><li> We encourage tracks that foster stimulating discussions on state-of-the-art, emerging, visionary, and even controversial topics. 
-</li><li>Submitted papers must present significant unpublished work, meeting the same high standards as main conference papers. 
-</li><li> All accepted papers will be featured in the official conference proceedings. We expect all accepted tracks to adhere to the conference paper submission. </li></ul>
-
- 
-
-   <h5>Special Track Topics of Interest (but not limited to)</h5>
-                <ul  style="text-align:justify;">
-<li>  	Advancements in AI for Image Processing </li>
-<li> 	Image Segmentation Techniques and Applications </li>
-<li>	Pattern Recognition in Healthcare </li>
-<li>	Computer Vision for Autonomous Systems </li>
-<li>	Human-Centric Image Analysis </li>
-<li>	Integrating Text and Image Information </li>
-<li>	Bridging the Physical and Digital Worlds </li>
-<li>	Biometric Pattern Recognition </li>
-<li>	Ethical Considerations in Image Processing and Pattern Recognition </li>
-<li>	Image Forensics </li>
-<li>	Real-time Image and Video Analytics </li>
-<li>	Cyber-Physical System <br>
-<li>	Federated Learning in Image Processing </li>
-<li>	AI in Healthcare, Finance, Agriculture, etc.</li>
-  </ul>
-              
-            
-<h5> Special Track Submission </h5>
-<ul  style="text-align:justify;"> 
-	<!--              
-<li> Kindly use the <a href="https://docs.google.com/document/d/19cX4oItxfXF8kfdVMME9cYr_-pAuLVvL/edit?usp=drive_link&ouid=108407596157313643565&rtpof=true&sd=true" target="_blank"> template</a> provided to prepare the proposal.</li>
---> 
-<li>Each proposal must include:
-<ul>               
-<li>	Special track title , </li>
-<li>	A brief biography of special track organizer(s),</li>
-<li>	A draft of Special Track Call for papers (important dates must be the same of the main conference, see website),</li>
-<li>	List of potential Reviewers must be provided.</li> </ul> 
-</li>
-<li>Send Your Special Track Proposals to <a href="mailto:aisec@uca.ac.ma" target="_blank" >  aisec@uca.ac.ma </a> with subject line: Special Track Proposal for AISEC-2025 </li>
-<!--
-<li>Deadline for special track proposal: <b style="font-size:100%;color:#ee0000;"> 25th March 2025</b> </li>
--->
-<!-- <li>Special track acceptance notification: 15th March 2024  </li> -->
-</ul>
 
 
-          
-<!--
-            <h1>Confirmed special tracks</h1>
 
-<h4>ST1: Advancements in AI for Image Processing </h4><p> Organizers:<br> Dr. Jaspal Kaur Saini, <i>NIT Jalandhar, India</i> <br>
-Dr. Pratishtha Verma, <i>NIT Kurukshetra, India</i><br>
-Dr. Vishal Krishna Singh, <i>University of Essex, United Kingdom</i><br>For more information, <a href="Doc/RTIP2R-2024-CFP-ST1.pdf" target="_blank">download the pdf</a>
-</p>
-
-
-<h4>ST2: AI in Healthcare </h4><p> Organizers:<br> 
-Dr. Amit Singhal, <i>NSUT, India</i><br>
-Dr. Megha Agarwal, <i>JIIT Noida, India</i><br>
-Dr. Pushpendra Singh, <i>JNU, India</i><br>For more information, <a href="Doc/RTIP2R-2024-CFP-ST2.pdf" target="_blank">download the pdf</a>
-
-</p>
-
-
-<h4>ST3: Emotional well-being Digital Twin </h4><p> Organizers:<br> 
-Dr. Richa Golash, <i>Bennett University, India</i><br>
-Dr. Akhil Kumar, <i>Bennett University, India</i><br>
-Kushagra Golash, <i>BITS Dubai</i><br>
-For more information, <a href="Doc/RTIP2R-2024-CFP-ST3.pdf" target="_blank">download the pdf</a>
-</p>
-
-<h4>ST4: Cross-Modal Information Retrieval using Image and Textual Contents </h4><p> Organizers:<br> 
-Dr. Avinash Chandra Pandey, <i>PDPM IIITDM Jabalpur, India </i><br>
-Dr. Ashish Kumar Tripathi, <i>MNIT Jaipur, India</i> <br>
-Dr. Durgesh Singh, <i>PDPM IIITDM Jabalpur, India</i><br>For more information, <a href="Doc/RTIP2R-2024-CFP-ST4.pdf" target="_blank">download the pdf</a>
-</p>
-
-<h4>ST5: Quantum-Enhanced Imaging and ML for Environmental Analysis </h4><p> Organizers:<br> 
-Prof. Akansha Singh, <i>Bennett University, India</i><br>
-Prof. Krishna Kant Singh, <i> Delhi Technical Campus, India</i><br>For more information, <a href="Doc/RTIP2R-2024-CFP-ST5.pdf" target="_blank">download the pdf</a>
-</p>
-
-<h4>ST6: Cyber-Physical Systems Automation for Industry 4.0 </h4><p> Organizers:<br> 
-Dr. Madhukrishna Priyadarsini, <i>NIT Trichy, India</i><br>
-Dr. AHM Jakaria, <i>Electric Power Research Institute, Tennessee, United States</i><br>For more information, <a href="Doc/RTIP2R-2024-CFP-ST6.pdf" target="_blank">download the pdf</a>
-</p>
-
-<h4>ST7: Advancements in Machine Learning and Pattern Recognition for Electrical & Electronics Engineering </h4><p> Organizers:<br> 
-Dr. Ishan Srivastava, <i>BBAU Lucknow, India</i><br>
-Dr. Raghavendra Naik, <i>Aalborg University, Denmark</i><br>
-Dr. Abhishek Kumar, <i>CMR University, Bengaluru, India</i><br>
-Dr Venkata Sainath Gupta T, <i>V R Siddhartha Engineering College, Vijayawada, India</i><br>For more information, <a href="Doc/RTIP2R-2024-CFP-ST7.pdf" target="_blank">download the pdf</a>
-</p>
-
-<h4>ST8: Machine Learning Techniques for Image, Speech and Natural Language Processing </h4><p> Organizers:<br> 
-Dr. Mohit Dua, <i>NIT Kurukshetra, India</i><br>
-Nidhi Chakravarty, <i>NIT Kurukshetra, India</i><br>
-Dr. Shelza Dua, <i>NIT Kurukshetra, India</i><br>For more information, <a href="Doc/RTIP2R-2024-CFP-ST8.pdf" target="_blank">download the pdf</a>
-</p>
-
-<h4>ST9: Transforming Urban Landscapes: Harnessing the Synergy of IoT and Machine Learning for Smart Cities' Data-Centric Evolution </h4><p> Organizers:<br> 
-Dr. BV Surya Vardhan, <i>Council on Energy, Environment and Water (CEEW), India</i><br>
-Dr. Sidharth Sabyasachi, <i>TCS Pune, India</i><br>
-Dr. Ishan Srivastava, <i>BBAU Lucknow, India</i><br>
-Dr Revati Godse, <i>Singapore University of Technology and Design, Singapore</i></br>For more information, <a href="Doc/RTIP2R-2024-CFP-ST9.pdf" target="_blank">download the pdf</a>
-</p>
-<br> <br>
-<p><b>Important note:</b> If you are interested in organizing a special track, please contact at  <a href="mailto:rtip2r.2024@gmail.com" target="_blank" >rtip2r.2024@gmail.com </a></p>
-
-
-                    </div>
-                </div>
-
--->
-	
+    <style>
+        /* Ensure lists inside #intro have custom bullets */
+        #intro .container ul {
+            /* Remove default bullets */
+            margin: 2px 0 22px 0px;
+            padding-left: 20px;
+        }
   
+        /* First-level list items */
+        #intro .container ul li {
+            position: relative;
+            margin: 0 0 6px 0;
+            padding: 0 0 4px 15px; /* Adjust spacing */
+            line-height: 1.5em;
+        }
+  
+        /* Custom bullet for first-level list */
+        #intro .container ul li::before {
+            content: "▪"; /* Use ▪ symbol */
+            color: #000;
+            font-size: 1.2em;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+  
+        /* Nested lists */
+        #intro .container ul ul {
+            margin-top: 10px;
+            padding-left: 30px;
+        }
+  
+        /* Second-level list items */
+        #intro .container ul ul li {
+            position: relative;
+            padding-left: 15px;
+        }
+  
+        /* Custom bullet for second-level lists */
+        #intro .container ul ul li::before {
+            content: "▪"; /* Same ▪ bullet */
+            color: #555;
+            font-size: 1em;
+            font-weight: normal;
+            position: absolute;
+            left: 0;
+        }
+
+        table
+            { margin: 10px 0 0 0;}
+
+        table tr th, table tr td
+            { background: #F5F5F5;
+            color: #111;
+            padding: 7px 4px;
+            text-align: left;}
+            
+        table tr td
+            { background: #FBFBFB;
+            color: #111;
+            border-top: 1px solid #FFF;}
+  
+    </style>
 
 
-</body></html>
+    <section id="intro" class="intro section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title-header text-center">
+                <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Special Tracks</h2>
+                <h6 style="text-align: justify; color: red;"><strong>Call For Special Tracks</strong></h6>
+                <ul style="text-align: justify;"> 
+                    <li>
+                        Proposed special tracks should not duplicate the general conference topics and should concentrate on emerging research fields within image processing and pattern recognition.
+                    </li>
+                    <li>
+                        We encourage tracks that foster stimulating discussions on state-of-the-art, emerging, visionary, and even controversial topics. 
+                    </li>
+                    <li>
+                        Submitted papers must present significant unpublished work, meeting the same high standards as main conference papers. 
+                    </li>
+                    <li>
+                        All accepted papers will be featured in the official conference proceedings. We expect all accepted tracks to adhere to the conference paper submission. 
+                    </li>
+                </ul>
+                <h6 style="text-align: justify; color: red;"><strong>Special Track Topics of Interest (but not limited to)</strong></h6>
+                <ul style="text-align: justify;">
+                    <li>Advancements in AI for Image Processing </li>
+                    <li>Image Segmentation Techniques and Applications </li>
+                    <li>Pattern Recognition in Healthcare </li>
+                    <li>Computer Vision for Autonomous Systems </li>
+                    <li>Human-Centric Image Analysis </li>
+                    <li>Integrating Text and Image Information </li>
+                    <li>Bridging the Physical and Digital Worlds </li>
+                    <li>Biometric Pattern Recognition </li>
+                    <li>Ethical Considerations in Image Processing and Pattern Recognition </li>
+                    <li>Image Forensics </li>
+                    <li>Real-time Image and Video Analytics </li>
+                    <li>Cyber-Physical System <br>
+                    <li>Federated Learning in Image Processing </li>
+                    <li>AI in Healthcare, Finance, Agriculture, etc.</li>
+                </ul>
+                <h6 style="text-align: justify; color: red;"><strong> Special Track Submission</strong></h6>
+                <ul style="text-align: justify;">
+                    <li>
+                        Each proposal must include: 
+                        <ul>
+                            <li>Special track title , </li>
+                            <li>A brief biography of special track organizer(s),</li>
+                            <li>A draft of Special Track Call for papers (important dates must be the same of the main conference, see website),</li>
+                            <li>List of potential Reviewers must be provided.</li> 
+                        </ul>
+                    </li> 
+                    <br>
+                    <li> 
+                        Send Your Special Track Proposals to <a href="mailto:aisec@uca.ac.ma" target="_blank" >  aisec@uca.ac.ma </a> with subject line: Special Track Proposal for AISEC-2025 
+                    </li> 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="site-info">
+              <p>All Rights Reserved &copy; by 2025 AISEC International Summit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+
+    <div id="preloader">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/main.js"></script>  
+
+
+
+
+  </body>
+</html>
