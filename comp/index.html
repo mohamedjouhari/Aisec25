@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>AISEC CTF</title>
+    <link rel="shortcut icon" href="../assets/images/aisec removedbg.png" type="image/png">
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -16,6 +18,95 @@
     <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
+<!--
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  var navbarToggler = document.querySelector('.navbar-toggler');
+  var navbarCollapse = document.querySelector('.navbar-collapse');
+  
+  navbarToggler.addEventListener('click', function() {
+    navbarCollapse.classList.toggle('show');
+  });
+});
+</script>
+-->
+<style>
+    /* Navbar Toggler Styles */
+.navbar-toggler {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 71, 87, 0.25); /* Using your color_danger with opacity */
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Navbar Toggler Icon Styles */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: all 0.2s ease;
+}
+
+/* Animation when clicked */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 71, 87, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6L24 24M6 24L24 6'/%3e%3c/svg%3e");
+  transform: rotate(90deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .navbar-nav.ml-auto {
+    padding-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .navbar-nav.ml-auto a {
+    padding: 0.75rem 1.5rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .navbar-nav.ml-auto a:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Fix for disappearing navbar */
+.navbar-collapse {
+  transition: none !important; /* Remove transitions that might cause flickering */
+}
+
+.navbar-toggler.collapsed {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler:not(.collapsed) {
+  border-color: rgba(255, 71, 87, 0.5); /* Your color_danger */
+}
+
+/* Ensure dropdown stays open when clicked */
+.navbar-collapse.collapse.show {
+  display: block !important;
+}
+</style>
 
 
 <body class="imgloaded">
@@ -54,7 +145,6 @@
                         </div>
                     </div>
                 </nav>
-
             </div>
         </div>
 
