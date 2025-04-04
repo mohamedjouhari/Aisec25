@@ -870,32 +870,47 @@ span.fail:after {
   /* GENERAL MEDIA QUERIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   
-  @media screen and (max-width: 900px) {
+  /* RESPONSIVE DESIGN - KEEP EVENTS CENTERED ON MOBILE */
+@media screen and (max-width: 900px) {
     .timeline ul li div {
-      width: 250px;
+        max-width: 250px;
     }
+
     .timeline ul li:nth-child(even) div {
-      left: -289px;
-      /*250+45-6*/
+        left: -289px;
     }
-  }
-  
-  @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
     .timeline ul li {
-      margin-left: 20px;
+        margin-left: 0;
     }
+
     .timeline ul li div {
-      width: calc(100vw - 91px);
+        width: 90%;
+        max-width: 280px;
+        min-width: unset; /* Remove minimum width for better fit */
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 10px;
     }
+
+    .timeline ul li::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline ul li:nth-child(odd) div,
     .timeline ul li:nth-child(even) div {
-      left: 45px;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .timeline ul li:nth-child(even) div::before {
-      left: -15px;
-      border-width: 8px 16px 8px 0;
-      border-color: transparent #f45b69 transparent transparent;
+
+    .timeline ul li div::before {
+        display: none; /* Hide arrow for a clean layout */
     }
-  }
+}
   
   
   /* EXTRA/CLIP PATH STYLES
