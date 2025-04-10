@@ -783,7 +783,7 @@ span.fail:after {
 }
 /*End style*/
 
-/* TIMELINE - UPDATED VERSION */
+/* 
 .timeline ul {
     background: #456990;
     padding: 40px 0;
@@ -888,7 +888,7 @@ span.fail:after {
     line-height: 1.4;
   }
   
-  /* RESPONSIVE DESIGN */
+  
   @media screen and (max-width: 900px) {
     .timeline ul li div {
       width: 300px;
@@ -903,8 +903,8 @@ span.fail:after {
   and (max-width: 428px) 
   and (max-height: 926px) {
     .timeline ul li div {
-        width: calc(100vw - 60px); /* Dynamic width based on viewport */
-        max-width: 368px; /* Maximum width constraint */
+        width: calc(100vw - 60px); 
+        max-width: 368px; 
       padding: 10px 12px;
       word-break: break-word;
       hyphens: auto;
@@ -953,7 +953,6 @@ span.fail:after {
     }
   }
   
-  /* EXTRA STYLES */
   .timeline-clippy ul li::after {
     width: 40px;
     height: 40px;
@@ -1010,7 +1009,600 @@ span.fail:after {
       transform: translateX(-50%) scale(1);
     }
   }
+*/
 
+
+
+/* TIMELINE - UPDATED VERSION 
+.timeline ul {
+  background: #456990;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 4px;
+  margin: 0 auto;
+  padding-top: 40px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+  transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li div {
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  background: red;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  box-sizing: border-box;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent red transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent red;
+}
+
+.timeline ul li.in-view::after {
+  background: red;
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.timeline-event {
+  line-height: 1.4;
+}
+
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 300px;
+  }
+  
+  .timeline ul li:nth-child(even) div {
+    left: -339px;
+  }
+}
+
+
+@media only screen and (max-width: 428px) and (max-height: 926px) {
+  .timeline ul li div {
+    width: calc(100vw - 120px); 
+    max-width: 300px;
+    padding: 10px 12px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  
+  
+  .timeline ul li:nth-child(odd) div {
+    left: 45px;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .timeline ul li:nth-child(even) div {
+    left: auto;
+    right: 45px;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent red;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .timeline ul {
+    padding: 30px 0;
+  }
+  
+  .timeline ul li {
+    margin: 0 auto; 
+    width: 3px;
+    padding-top: 30px;
+  }
+  
+  .timeline ul li::after {
+    width: 20px;
+    height: 20px;
+    left: 50%; 
+    transform: translateX(-50%);
+  }
+  
+  
+  .timeline ul li:nth-child(odd) div {
+    width: calc(45vw - 20px);
+    max-width: 250px;
+    left: auto; 
+    right: calc(50% + 15px); 
+    transform: none !important;
+  }
+  
+  .timeline ul li:nth-child(even) div {
+    width: calc(45vw - 20px);
+    max-width: 250px;
+    left: calc(50% + 15px) !important; 
+    right: auto;
+    transform: none !important;
+  }
+  
+  
+  .timeline ul li:nth-child(odd) div::before {
+    left: auto;
+    right: -12px;
+    border-width: 6px 0 6px 12px;
+    border-color: transparent transparent transparent red;
+  }
+  
+  .timeline ul li:nth-child(even) div::before {
+    left: -12px;
+    right: auto;
+    border-width: 6px 12px 6px 0;
+    border-color: transparent red transparent transparent;
+  }
+  
+  .timeline-date {
+    font-size: 0.9rem;
+  }
+}
+
+/* Very small screens - single column fallback if needed 
+@media screen and (max-width: 480px) {
+  /* Option for single column if alternating becomes too cramped */
+  /* Uncomment this section if you prefer single column on very small screens
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  
+  .timeline ul li div {
+    width: calc(100vw - 90px) !important;
+    max-width: none;
+    left: 45px !important;
+    right: auto !important;
+  }
+  
+  .timeline ul li:nth-child(odd) div::before,
+  .timeline ul li:nth-child(even) div::before {
+    left: -12px !important;
+    right: auto !important;
+    border-width: 6px 12px 6px 0 !important;
+    border-color: transparent red transparent transparent !important;
+  }
+  
+  .timeline ul li::after {
+    left: 0;
+  }
+  
+}
+
+/* EXTRA STYLES 
+.timeline-clippy ul li::after {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+}
+
+.timeline-rhombus ul li::after {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.timeline-rhombus ul li div::before {
+  bottom: 12px;
+}
+
+.timeline-star ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.timeline-heptagon ul li::after {
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+
+.timeline-infinite ul li::after {
+  animation: scaleAnimation 2s infinite;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.25);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+*/
+
+
+/* TIMELINE - BASE STYLES (Mostly Unchanged) */
+.timeline ul {
+    background: #456990; /* Example background */
+    padding: 40px 0;
+    margin: 0;
+    /* Ensure ul takes up space if empty, for background visibility */
+    min-height: 100px; 
+  }
+  
+  .timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 4px; /* The central timeline bar */
+    margin: 0 auto; /* Center the timeline bar */
+    padding-top: 50px; /* Space between items */
+    background: #fff; /* Color of the timeline bar */
+  }
+  
+  /* The circular marker on the timeline */
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: inherit; /* Takes background from li (the white line) */
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  /* The content box for each timeline item */
+  .timeline ul li div {
+    position: relative;
+    bottom: 0; /* Align bottom edge with the marker's bottom */
+    width: 400px; /* Initial desktop width */
+    padding: 15px;
+    background: red; /* Box background */
+    color: white; /* Text color */
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    box-sizing: border-box;
+    min-height: 60px;
+    display: flex;
+    /* Use flex for content alignment if needed */
+    flex-direction: column; 
+    justify-content: center; 
+    visibility: hidden; /* For animation */
+    opacity: 0; /* For animation */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* The arrow pointing towards the timeline */
+  .timeline ul li div::before {
+    content: "";
+    position: absolute;
+    bottom: 12px; /* Adjust vertical position of arrow */
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  /* --- Desktop Alternating Layout --- */
+  
+  /* ODD items (1st, 3rd, etc.) - RIGHT side */
+  .timeline ul li:nth-child(odd) div {
+    left: 45px; /* Space from center line */
+    transform: translate3d(200px, 0, 0); /* Initial state for animation */
+  }
+  
+  .timeline ul li:nth-child(odd) div::before {
+    left: -15px; /* Position arrow on the left side of the box */
+    border-width: 8px 16px 8px 0;
+    border-color: transparent red transparent transparent; /* Pointing left */
+  }
+  
+  /* EVEN items (2nd, 4th, etc.) - LEFT side */
+  .timeline ul li:nth-child(even) div {
+    left: -439px; /* Position box to the left (box width + space) */
+    transform: translate3d(-200px, 0, 0); /* Initial state for animation */
+  }
+  
+  .timeline ul li:nth-child(even) div::before {
+    right: -15px; /* Position arrow on the right side of the box */
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent red; /* Pointing right */
+  }
+  
+  /* --- Animation Trigger --- */
+  .timeline ul li.in-view::after {
+    background: red; /* Highlight marker when in view */
+  }
+  
+  .timeline ul li.in-view div {
+    transform: none; /* Move to final position */
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Content styling within the box */
+  .timeline-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-date { /* Style for the <time> element */
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+    display: block; /* Ensure it takes its own line */
+  }
+  
+  .timeline-event { /* Style for the text description */
+    line-height: 1.4;
+  }
+  
+  
+  /* === RESPONSIVE DESIGN === */
+  
+  /* Larger Tablets / Small Laptops */
+  @media screen and (max-width: 900px) {
+    .timeline ul li div {
+      width: 300px; /* Reduce box width */
+    }
+    .timeline ul li:nth-child(even) div {
+      left: -339px; /* Adjust left position for the new width */
+    }
+  }
+  
+  /* === MOBILE RESPONSIVE - ALTERNATING LAYOUT === */
+/* Tablets and Phones (e.g., less than 768px) */
+@media screen and (max-width: 767px) {
+    .timeline ul {
+        padding: 30px 0; /* Reduce padding */
+    }
+    .timeline ul li {
+      /* Central line remains centered */
+      margin: 0 auto; 
+      width: 3px; /* Slightly thinner line */
+      padding-top: 40px; /* Adjust spacing */
+    }
+  
+    .timeline ul li::after {
+      width: 20px; /* Smaller marker */
+      height: 20px;
+      /* Keep marker centered on the line */
+      left: 50%; 
+      transform: translateX(-50%); 
+    }
+  
+    /* --- Mobile Alternating Layout --- */
+    
+    /* Make ALL boxes occupy roughly half the screen width */
+    .timeline ul li div {
+      width: calc(50vw - 35px); /* 50% viewport width minus some space */
+      max-width: 250px; /* Add a max-width if needed */
+      /* Reset desktop transforms and ensure visibility/positioning */
+      /* Use !important to override base styles and potential .in-view transforms */
+      transform: none !important; 
+      visibility: visible !important; 
+      opacity: 1 !important; 
+      /* Adjust padding for smaller boxes */
+      padding: 10px 12px; 
+      /* Ensure relative positioning is still active */
+      position: relative; 
+      bottom: 0;
+    }
+  
+    /* ODD items (1st, 3rd...) - Position on the LEFT side */
+    .timeline ul li:nth-child(odd) div {
+      left: auto !important; /* Unset desktop left positioning */
+      right: calc(50% + 200px) !important; /* Position right edge 15px to the LEFT of center */
+    }
+  
+    /* Arrow for ODD items (pointing RIGHT towards the line) */
+    .timeline ul li:nth-child(odd) div::before {
+      left: auto; /* Unset */
+      right: -12px; /* Position arrow on the right side of the box */
+      border-width: 6px 0 6px 12px; /* Adjust arrow size */
+      border-color: transparent transparent transparent red; /* Pointing right */
+      bottom: 10px; /* Adjust arrow vertical position */
+    }
+  
+    /* EVEN items (2nd, 4th...) - Position on the RIGHT side */
+    .timeline ul li:nth-child(even) div {
+      right: auto !important; /* Unset any potential right setting */
+      left: calc(50% + 20px) !important; /* Position left edge 15px to the RIGHT of center */
+    }
+  
+    /* Arrow for EVEN items (pointing LEFT towards the line) */
+    .timeline ul li:nth-child(even) div::before {
+      right: auto; /* Unset */
+      left: -12px; /* Position arrow on the left side of the box */
+      border-width: 6px 12px 6px 0; /* Adjust arrow size */
+      border-color: transparent red transparent transparent; /* Pointing left */
+      bottom: 10px; /* Adjust arrow vertical position */
+    }
+  
+    /* Adjust font sizes for mobile if needed */
+    .timeline-date {
+        font-size: 1rem; 
+    }
+    .timeline-event {
+        font-size: 0.9rem;
+    }
+}
+  /* Optional: Very small screens - fallback to single column if alternating is too cramped */
+  /* Uncomment this section if needed */
+  /*
+  @media screen and (max-width: 480px) {
+    .timeline ul li {
+      // Center the line itself if needed, but offset content from edge
+      margin-left: 20px; 
+      margin-right: 0;
+    }
+  
+    .timeline ul li::after {
+      left: 0; // Align marker with the line start
+      transform: none;
+    }
+  
+    .timeline ul li div {
+      width: calc(100vw - 75px) !important; // Use most of the width
+      max-width: none; // Remove max-width
+      left: 35px !important; // Position all boxes to the right
+      right: auto !important;
+    }
+    
+    // Point all arrows left
+    .timeline ul li:nth-child(odd) div::before, 
+    .timeline ul li:nth-child(even) div::before {
+      left: -12px !important; 
+      right: auto !important;
+      border-width: 6px 12px 6px 0 !important;
+      border-color: transparent red transparent transparent !important;
+    }
+  }
+  */
+  
+  
+  /* --- EXTRA STYLES (Unchanged) --- */
+  /* These modify the marker shape, keep them if you use these classes */
+  .timeline-clippy ul li::after {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+  }
+  
+  .timeline-rhombus ul li::after {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  
+  .timeline-rhombus ul li div::before {
+    bottom: 12px;
+  }
+  
+  .timeline-star ul li::after {
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+  }
+  
+  .timeline-heptagon ul li::after {
+    clip-path: polygon(
+      50% 0%,
+      90% 20%,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      10% 20%
+    );
+  }
+  
+  .timeline-infinite ul li::after {
+    animation: scaleAnimation 2s infinite;
+  }
+  
+  @keyframes scaleAnimation {
+    0% {
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(1.25);
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+    }
+  }
+    
   .our-team {
     padding: 30px 0 40px;
     margin-bottom: 30px;
@@ -1355,4 +1947,3 @@ span.fail:after {
       transform: translate(-50%, -80%) translateZ(-55px) rotateY(360deg);
     }
   }
-  
