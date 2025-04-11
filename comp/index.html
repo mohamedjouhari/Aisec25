@@ -106,6 +106,109 @@
 .navbar-collapse.collapse.show {
   display: block !important;
 }
+
+
+/* Base title styles */
+.content__title {
+  animation-name: glitch-anim-text;
+  animation-duration: var(--time-anim);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.2);
+  font-weight: 700; /* Bold */
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Display-1 size styling */
+.display-1 {
+  font-size: 6rem; /* Base size for large screens */
+}
+
+/* Color styling */
+.color_white {
+  color: white;
+}
+
+.color_danger {
+  color: red;
+}
+
+/* Text alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive font sizing */
+@media screen and (max-width: 1200px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .display-1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .display-1 {
+    font-size: 3rem;
+  }
+  
+  .content__title {
+    word-break: break-word; /* Ensures long words break properly */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .display-1 {
+    font-size: 2.5rem;
+  }
+  
+  .content__title span {
+    display: inline; /* Keep spans together with text */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .display-1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+/* Optional: Add this if you want to ensure the glitch effect works better on mobile */
+@media screen and (max-width: 576px) {
+  @keyframes glitch-anim-text {
+    0% { 
+      transform: translate3d(0, 0, 0);
+      clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+    }
+    /* Same as above but with smaller transforms for mobile */
+    22% {
+      transform: translate3d(3px, 0, 0);
+    }
+    24% {
+      transform: translate3d(-3px, 0, 0);
+    }
+    26% {
+      transform: translate3d(3px, 0, 0);
+    }
+    28% {
+      transform: translate3d(-3px, 0, 0);
+    }
+    30% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+}
 </style>
 
 
@@ -240,7 +343,7 @@
             <div id="about" class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <h1 class="display-1 bold color_white content__title text-center"><span class="color_danger">IMPORTANT</span>DATES<span class="vim-caret">&nbsp;</span></h1>
+                        <h1 class="display-1 bold color_white content__title text-center"><span class="color_danger">IMPORTANT</span> DATES<span class="vim-caret">&nbsp;</span></h1>
                         <div class="row justify-content-center hackerFont">
                             <section class="timeline">
                             <ul>
@@ -276,7 +379,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="jumbotron bg-transparent mb-0 pt-3 radius-0">
             <div id="prizes" class="container">
                 <div class="row">
